@@ -1,0 +1,36 @@
+
+
+.headshot {
+  & img {
+    width: 25%;
+  }
+
+  &-name {
+    margin-bottom: -1rem;
+    &-align {
+        width: 30%;
+        text-align: center;
+    }
+  }
+  &-centered {
+    text-align: center;
+  }
+  &-right-margin {
+    margin-right: 5%;
+  }
+
+  &-banner-color {
+    background-color: #4CABA5;
+    height: 15%;
+    margin-top: -1rem;
+    padding-top: 1rem;
+  }
+}
+
+
+.headshot-background {
+
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}

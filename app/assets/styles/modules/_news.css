@@ -1,0 +1,45 @@
+.news {
+
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-left: 5%;
+  margin-bottom: 4rem;
+
+
+&-background {
+
+}
+
+
+&-header {
+
+  text-decoration: underline;
+  text-align: center;
+  font-size: 2rem;
+}
+
+&-wrapper {
+  padding-left: 10%;
+  padding-right: 10%;
+
+  &-bottom {
+    margin-bottom: 15rem;
+
+
+  }
+
+  &-top {
+    padding-top: 8rem;
+  }
+}
+
+  &-port-1 {
+  width: 80%;
+  margin-left: 20%;
+}
+
+&-land-1 {
+width: 80%;
+
+}
+}
