@@ -1,0 +1,27 @@
+.row {
+
+&-3 {
+  float: left;
+  width: 25%;
+}
+
+&-9 {
+  float: left;
+  width: 75%;
+}
+&-5 {
+  float: left;
+  width: 40%;
+}
+
+&-7 {
+  float: left;
+  width: 60%;
+}
+
+  :after {
+    content: "";
+    clear: both;
+    display: table;
+}
+}

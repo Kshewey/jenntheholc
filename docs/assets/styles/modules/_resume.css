@@ -1,0 +1,20 @@
+.resume {
+  background-color: white;
+  margin-top: 3rem;
+
+  &-background {
+    background-color: white;
+  }
+
+&-wrapper {
+  text-align: center;
+  padding-top: 2.5rem;
+  padding-right: 10%;
+  padding-left: 10%;
+
+}
+  & img {
+    width: 80%;
+    margin: auto;
+  }
+}
