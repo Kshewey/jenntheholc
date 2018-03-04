@@ -1,0 +1,40 @@
+.about {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  font-family: 'PT Sans Narrow', sans-serif;
+  &-wrapper {
+    padding-top: 3rem;
+  }
+
+
+&-img-1 {
+  text-align: center;
+  float: left;
+  width: 80%;
+  margin-left: 10%;
+}
+&-img-2 {
+  text-align: center;
+  float: left;
+  width: 80%;
+  margin-left: 10%;
+}
+
+&-top {
+  margin-right: 15%;
+  margin-top: 2rem;
+}
+
+&-top-margin {
+  padding-top: 6rem;
+}
+
+&-left-margin {
+  padding-left: 4%;
+}
+
+&-lyrics {
+  text-align: center;
+  font-size: 1.3rem;
+}
+}

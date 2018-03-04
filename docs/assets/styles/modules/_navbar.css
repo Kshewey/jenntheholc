@@ -1,0 +1,27 @@
+.navbar {
+  color: white;
+  float: right;
+  margin-top: -3rem;
+  margin-right: 8%;
+  text-shadow: .3px .3px black;
+  font-weight: bold;
+
+  &-main {
+    list-style: none;
+
+    & li {
+      display: inline;
+
+      & a {
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+      }
+
+      & a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

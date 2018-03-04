@@ -19,6 +19,11 @@
   width: 60%;
 }
 
+&-6 {
+  float: left;
+  width: 45%;
+}
+
   :after {
     content: "";
     clear: both;
