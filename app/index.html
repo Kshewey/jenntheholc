@@ -4,32 +4,72 @@
 <head>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
   <title>Jennifer Holcombe - Actor</title>
   <meta name="keywords" content="Jennifer Holcombe, Actor">
   <meta name="description" content="Jennifer Holcombe - Actor Webpage">
   <link rel="stylesheet" href="temp/styles/styles.css">
   <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed" rel="stylesheet">
 
 
 
 
 </head>
 <body>
+  <div class="main-content main-content-background">
   <div class="headshot-banner-color">
   <div class="headshot headshot-name-align headshot-font-color">
     <h1 class="headshot-name">Jennifer Holcombe<h1>
-    <h3 class="headshot-subtitle">AEAe | MFA | Georgia Peach<h3>
   </div> <!-- headshot-name-align -->
-  <div class="navbar">
+
+
+
+
+
+  <div class="navbar-left navbar">
     <ul class="navbar-main">
-      <li><a href="index.html">Home</a></li> |
-      <li><a href="about.html">About me</a></li> |
-      <li><a href="news.html">News</a></li> |
-      <li><a href="media.html">Media</a></li> |
-      <li><a href="#">Contact</a></li>
+      <li class="navbar-rightmargin"><a href="index.html">Home</a></li>
+      <li class="navbar-rightmargin"><a href="about.html">About me</a></li>
+      <li><a href="news.html">News</a></li>
     </ul>
   </div> <!-- navbar -->
+  <div class="navbar-right navbar">
+    <ul class="navbar-main">
+      <li class="navbar-dropdown navbar-rightmargin"><a href="media.html">Media</a>
+        <div class="navbar-dropdown-dropnav">
+        <ul>
+          <li><a href="media.html">Photos</a></li>
+          <li><a href="videos.html">Videos</a></li>
+        </ul>
+      </div>
+      </li>
+      <li class="navbar-rightmargin"><a href='index.html#resume'>Resume</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </div> <!-- navbar -->
+
+
+  <div class="mobile-menu-icon">
+    <div class="mobile-menu-icon-middle"></div>
+  </div>
+
+  <ul class="mobile-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About me</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="media.html">Photos</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href='index.html#resume'>Resume</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+
+            </ul>
+
+
 </div> <!-- headshot banner color -->
+
+
+
   <div class="headshot-background">
     <div class="headshot headshot-centered">
       <img src="assets/images/headshot2.jpg" class="headshot-right-margin">
@@ -51,29 +91,104 @@
   </div> <!-- demo div -->
 
 
-  <div class="resume resume-wrapper resume-background">
+  <div class="resume resume-wrapper resume-background" id="resume">
     <img src="assets/images/jenniferholcomberesume2018.png">
+    <div class="resume-download-image">
+    <a href="jenniferholcomberesume2018.pdf" download> <img src="assets/images/download.png"></a>
+    <p>Download Resume</p>
+  </div>
   </div> <!--resume -->
 
-  <section id="contact">
+<div class="contact">
+<div class="contact-header" id="contact">
+  <h3>Drop me a line!</h3>
+</div> <!--contact header div -->
 
-  <div class="container">
+  <div class="contact-flex">
+  <div class="contact-name">
+    <p>Jennifer Holcombe</p>
+    <p>Jenntheholc@gmail.com</p>
 
-  <form name="htmlform" method="post" action="toyousender.php">
+    <div class="contact-socialmedia">
+      <a href="https://www.youtube.com/user/JennHolcombe"><img src="/assets/images/youtube-contact.png"></a>
+      <a href="https://www.instagram.com/jenn_the_holc/"><img src="/assets/images/instagram-contact.png"></a>
+      <a href="https://vimeo.com/jenniferholcombe"><img src="/assets/images/vimeo-contact.png"></a>
+    </div> <!--social media-->
+  </div> <!-- contact name -->
+  <div class="contact-border">
+  </div>
+  <div class="contact-form">
 
-  <input type="text" name="first_name" placeholder="NAME" required>
+  <form id="gform" method="POST" class="pure-form pure-form-stacked"
+  action="https://script.google.com/macros/s/AKfycbwq8MrE8x5MwZkcXVtpbbOlhnekjn5IjxQUBkH6D9eyEfiACWjN/exec">
 
-  <input  type="email" name="email" placeholder="MAIL" required>
 
-  <textarea name="comments" placeholder="MESSAGE" required ></textarea>
+      <fieldset class="contact-field">
+        <label for="name">Name: </label><br>
+        <input id="name" name="name" placeholder="Name" />
+      </fieldset>
 
-  <button name="send" type="submit" class="submit">SEND</button>
+      <fieldset class="contact-field">
+        <label for="message">Message: </label><br>
+        <textarea id="message" name="message" rows="10"
+        placeholder="What can I do for you?"></textarea>
+      </fieldset>
 
-  </form>
+      <fieldset class="contact-field contact-left-margin-adjust">
+        <div id="contact-margin-adjust"><label for="email"><em>Your</em> Email Address:</label></div><br>
+        <input id="email" name="email" type="email" value="" required placeholder="your.name@email.com"/>
+        <span class ="contact-relative" id="email-invalid" style="visibility:hidden">
+          Must be a valid email address</span>
+      </fieldset>
 
+
+
+
+      <button class="button">
+        &nbsp;Send</button>
+
+    </form>
+  </div>
+    <!-- Customise the Thankyou Message People See when they submit the form: -->
+    <div style="display:none;" id="thankyou_message">
+      <div class="contact-thank-you-message">
+        <h2><em>Thanks</em> for contacting me!  I'll get back to you soon.</h2>
+      </div>
     </div>
-    </section>
 
+  </div>
+    <!-- Submit the Form to Google Using "AJAX" -->
+    <script data-cfasync="false" type="text/javascript"
+    src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+    <!-- <script data-cfasync="false" type="text/javascript"
+    src="/form-submission-handler.js"></script> -->
+  <!-- END -->
+</div> <!--contact flex -->
+</div> <!-- contact form -->
+</div> <!--contact -->
+</div> <!-- main content -->
+
+<div class="footer">
+  <div class="footer-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li> |
+      <li><a href="about.html">About Me</a></li> |
+      <li><a href="news.html">News</a></li> |
+      <li><a href="media.html">Photos</a></li> |
+      <li><a href="videos.html">Videos</a></li> |
+      <li><a href='index.html#resume'>Resume</a></li> |
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </div> <!--footer-nav -->
+  <div class="footer-border-bottom">
+  </div> <!-- bottom border--->
+  <div class="footer-social-media">
+    <a href="https://www.youtube.com/user/JennHolcombe"><img src="/assets/images/youtube.png"></a>
+    <a href="https://www.instagram.com/jenn_the_holc/"><img src="/assets/images/instagram.png"></a>
+    <a href="https://vimeo.com/jenniferholcombe"><img src="/assets/images/vimeo.png"></a>
+  </div>
+</div> <!--- footer -->
+<script src="/temp/scripts/App.js"></script>
 </body>
 
 
